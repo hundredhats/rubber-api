@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :recording do
-    sequence(:name) { "Recording #{n}" }
-    sequence(:url) { "example.com/#{n}.mp4" }
+    sequence(:name) {|n| "Recording #{n}" }
+    sequence(:url) {|n| "example.com/#{n}.mp4" }
   end
 end
